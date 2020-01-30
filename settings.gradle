@@ -1,2 +1,2 @@
-include ':app'
+include ':listview', ':gridview', ':recyclerview'
 rootProject.name='Lists-Grids-Adapters-Recyclers'
