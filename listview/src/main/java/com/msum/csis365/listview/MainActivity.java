@@ -11,7 +11,7 @@ import com.msum.csis365.list_view.R;
 public class MainActivity extends AppCompatActivity {
 
     private ListView lvExample;
-    private String[] exampleNames = {"Kyle", "Aishat", "Nathan", "Chris", "Jake", "Ben", "Peter"};
+    private String[] exampleNames = {"Kyle", "Aishat", "Nathan", "Chris", "Jake", "Ben", "Peter", "Andrew"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
