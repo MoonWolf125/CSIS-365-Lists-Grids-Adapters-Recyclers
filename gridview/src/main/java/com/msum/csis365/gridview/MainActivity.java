@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Obtain and assign the ListView with Id lv_example in the layout activity_main
+        // Obtain and assign the GridView with Id gv_example in the layout activity_main
         gvExample = findViewById(R.id.gv_example);
 
         // Create a generic ArrayAdapter
         ArrayAdapter exampleAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, exampleNames);
 
-        // Assign exampleAdapter to lvExample
+        // Assign exampleAdapter to gvExample
         gvExample.setAdapter(exampleAdapter);
     }
 }
