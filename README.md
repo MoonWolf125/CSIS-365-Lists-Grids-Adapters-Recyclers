@@ -15,6 +15,8 @@
 #### Open the listview module in Android Studio
 - Using the module selector towards the center of the toolbar select the listview module and run the project
 
+![Demo](samples/gettingstarted/SelectModule.gif)
+
 ## Common Shortcuts
 
 #### Double Shift
