@@ -22,6 +22,8 @@
 #### Double Shift
 - Searches everything and provides ways to filter the response
 
+![Demo](samples/shortcuts/FastSearch.gif)
+
 #### Control + Click or Control + B
 - Go to Declaration (directly)
 
