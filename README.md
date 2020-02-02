@@ -27,6 +27,8 @@
 #### Control + Click or Control + B
 - Go to Declaration (directly)
 
+![Demo](samples/shortcuts/GoToDeclaration.gif)
+
 #### Control + [
 - Navigate Back
 
