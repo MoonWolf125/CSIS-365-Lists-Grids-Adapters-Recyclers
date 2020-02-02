@@ -9,6 +9,7 @@
 4. Test the connection to the URL
 5. Clone the Repository
 6. Open the project in a new window
+
 ![Demo](samples/gettingstarted/CheckoutGithubVCS.gif)
 
 #### Open the listview module in Android Studio
