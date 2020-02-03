@@ -5,7 +5,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ViewHolder> {
+public class ColorAdapter extends RecyclerView.Adapter<ColorAdapter.ViewHolder> {
 
     // The data items the adapter will iterate over
     private int arrayLength;

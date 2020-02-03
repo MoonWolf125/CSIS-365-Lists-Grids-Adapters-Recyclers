@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rvExample;
-    private ExampleAdapter exampleAdapter;
+    private ColorAdapter colorAdapter;
 
 
     @Override
@@ -20,17 +20,17 @@ public class MainActivity extends AppCompatActivity {
         // Obtain and assign the RecyclerView with Id rv_example in the layout activity_main
         rvExample = findViewById(R.id.rv_example);
 
-        // Create an ExampleAdapter and assign it to the class-level variable
-        exampleAdapter = new ExampleAdapter();
+        // Create a ColorAdapter and assign it to the class-level variable
+        colorAdapter = new ColorAdapter();
 
         // Set the LayoutManager for rvExample
         rvExample.setLayoutManager(new LinearLayoutManager(this));
 //        rvExample.setLayoutManager(new GridLayoutManager(this, 4));
 
-        // Assign exampleAdapter to rvExample
-        rvExample.setAdapter(exampleAdapter);
+        // Assign colorAdapter to rvExample
+        rvExample.setAdapter(colorAdapter);
 
         // Set the length of the array of color names to the adapter
-        exampleAdapter.setDataItems(getResources().getStringArray(R.array.colorNames).length);
+        colorAdapter.setDataItems(getResources().getStringArray(R.array.colorNames).length);
     }
 }

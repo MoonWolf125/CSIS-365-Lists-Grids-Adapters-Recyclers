@@ -1,7 +1,6 @@
 package com.msum.csis365.gridview;
 
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,12 +18,9 @@ public class MainActivity extends AppCompatActivity {
         gvExample = findViewById(R.id.gv_example);
 
         // Create a generic ArrayAdapter
-        ExampleAdapter exampleAdapter = new ExampleAdapter(
-                this,
-                android.R.layout.simple_list_item_1,
-                getResources().getStringArray(R.array.colorNames));
+        ColorAdapter colorAdapter = new ColorAdapter(this);
 
-        // Assign exampleAdapter to gvExample
-        gvExample.setAdapter(exampleAdapter);
+        // Assign colorAdapter to gvExample
+        gvExample.setAdapter(colorAdapter);
     }
 }
