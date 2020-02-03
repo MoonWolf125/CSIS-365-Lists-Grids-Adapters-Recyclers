@@ -11,7 +11,6 @@ import com.msum.csis365.list_view.R;
 public class MainActivity extends AppCompatActivity {
 
     private ListView lvExample;
-    private String[] exampleNames = {"Red", "Orange", "Yellow", "Chartreuse Green", "Green", "Spring Green", "Cyan", "Azure", "Blue", "Violet", "Magenta", "Rose"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +21,10 @@ public class MainActivity extends AppCompatActivity {
         lvExample = findViewById(R.id.lv_example);
 
         // Create a generic ArrayAdapter
-        ArrayAdapter exampleAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, exampleNames);
+        ArrayAdapter exampleAdapter = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_list_item_1,
+                getResources().getStringArray(R.array.colorNames));
 
         // Assign exampleAdapter to lvExample
         lvExample.setAdapter(exampleAdapter);
