@@ -11,7 +11,7 @@ import com.msum.csis365.list_view.R;
 public class MainActivity extends AppCompatActivity {
 
     private ListView lvExample;
-    private String[] exampleNames = {"Kyle", "Aishat", "Nathan", "Chris", "Jake", "Ben", "Peter", "Andrew"};
+    private String[] exampleNames = {"Red", "Orange", "Yellow", "Chartreuse Green", "Green", "Spring Green", "Cyan", "Azure", "Blue", "Violet", "Magenta", "Rose"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

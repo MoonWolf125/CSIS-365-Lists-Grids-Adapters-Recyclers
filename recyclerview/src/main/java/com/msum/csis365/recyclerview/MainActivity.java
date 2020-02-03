@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rvExample;
     private ExampleAdapter exampleAdapter;
-    private String[] exampleNames = {"Kyle", "Aishat", "Nathan", "Chris", "Jake", "Ben", "Peter", "Andrew"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         // Assign exampleAdapter to rvExample
         rvExample.setAdapter(exampleAdapter);
 
-        // Set the exampleNames to the exampleAdapter
-        exampleAdapter.setDataItems(exampleNames);
+        // Set the length of the array of color names to the adapter
+        exampleAdapter.setDataItems(getResources().getStringArray(R.array.colorNames).length);
     }
 }

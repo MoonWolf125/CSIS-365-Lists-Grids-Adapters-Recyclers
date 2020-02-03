@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ViewHolder> {
 
     // The data items the adapter will iterate over
-    private String[] dataItems = {};
+    private int arrayLength;
 
     @NonNull
     @Override
@@ -20,18 +20,18 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         // Passes the corresponding data to the ExampleRowView in the ViewHolder
-        holder.rowView.setup(dataItems[position]);
+        holder.rowView.setup(position);
     }
 
     @Override
     public int getItemCount() {
         // Returns how many data items are in the list
-        return dataItems.length;
+        return arrayLength;
     }
 
-    public void setDataItems(String[] dataItems) {
-        // Assigns the new lists of data items into the class-level variable
-        this.dataItems = dataItems;
+    public void setDataItems(int arrayLength) {
+        // Assigns the new length of data items into the class-level variable
+        this.arrayLength = arrayLength;
 
         // Tells the Adapter to refresh/redraw itself
         notifyDataSetChanged();

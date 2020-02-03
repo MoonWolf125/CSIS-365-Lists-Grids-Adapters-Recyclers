@@ -3,4 +3,19 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <array name="colorCodes">
+        <item>#FF0000</item>
+        <item>#FF7F00</item>
+        <item>#FFFF00</item>
+        <item>#7FFF00</item>
+        <item>#00FF00</item>
+        <item>#00FF7F</item>
+        <item>#00FFFF</item>
+        <item>#007FFF</item>
+        <item>#0000FF</item>
+        <item>#7F00FF</item>
+        <item>#FF00FF</item>
+        <item>#FF007F</item>
+    </array>
 </resources>
