@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     private GridView gvExample;
-    private String[] exampleNames = {"Red", "Orange", "Yellow", "Chartreuse Green", "Green", "Spring Green", "Cyan", "Azure", "Blue", "Violet", "Magenta", "Rose"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +19,10 @@ public class MainActivity extends AppCompatActivity {
         gvExample = findViewById(R.id.gv_example);
 
         // Create a generic ArrayAdapter
-        ArrayAdapter exampleAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, exampleNames);
+        ExampleAdapter exampleAdapter = new ExampleAdapter(
+                this,
+                android.R.layout.simple_list_item_1,
+                getResources().getStringArray(R.array.colorNames));
 
         // Assign exampleAdapter to gvExample
         gvExample.setAdapter(exampleAdapter);

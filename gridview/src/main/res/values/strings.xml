@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">gridview</string>
     <string name="grid_view">Grid View</string>
+
+    <string-array name="colorNames">
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Chartreuse Green</item>
+        <item>Green</item>
+        <item>Spring Green</item>
+        <item>Cyan</item>
+        <item>Azure</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Magenta</item>
+        <item>Rose</item>
+    </string-array>
 </resources>
